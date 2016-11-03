@@ -32,6 +32,12 @@
 //    [NeteaseMusicAPI searchWithQuery:@"秒速五厘米" type:NMSearch_PlayList offset:0 limit:3 completionHandler:handler];
     // 搜索-用户
 //    [NeteaseMusicAPI searchWithQuery:@"双笙" type:NMSearch_User offset:0 limit:3 completionHandler:handler];
+    // 搜索-MV
+//    [NeteaseMusicAPI searchWithQuery:@"双笙" type:NMSearch_Mv offset:0 limit:3 completionHandler:handler];
+    // 搜索-歌词
+//    [NeteaseMusicAPI searchWithQuery:@"嘟嘟嘟噜" type:NMSearch_Lyric offset:0 limit:3 completionHandler:handler];
+    // 搜索-电台
+    [NeteaseMusicAPI searchWithQuery:@"双笙" type:NMSearch_Radio offset:0 limit:3 completionHandler:handler];
     
     // 音乐信息
 //    [NeteaseMusicAPI musicInfoWithId:422104949 completionHandler:handler];
@@ -42,7 +48,7 @@
     // 歌单信息
 //    [NeteaseMusicAPI playlistInfoWithPlaylistId:8486041 completionHandler:handler];
     // 歌词
-    [NeteaseMusicAPI musicLyricWithMusicId:426881506 completionHandler:handler];
+//    [NeteaseMusicAPI musicLyricWithMusicId:426881506 completionHandler:handler];
     
 }
 

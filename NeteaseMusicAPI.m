@@ -64,7 +64,7 @@ NSString *urlEncode(NSString *input);
 /**
  歌单
  */
-+ (void)playlistInfo:(NSInteger)playlistId completionHandler:(NeteaseMusicAPICompletionHandler)completionHandler {
++ (void)playlistInfoWithPlaylistId:(NSInteger)playlistId completionHandler:(NeteaseMusicAPICompletionHandler)completionHandler {
     NSString *URLString = [NSString stringWithFormat:@"http://music.163.com/api/playlist/detail?id=%ld", playlistId];
     NSMutableURLRequest *request = [self requestWithURLString:URLString];
     request.HTTPMethod = @"GET";

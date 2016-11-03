@@ -23,6 +23,9 @@ typedef void (^NeteaseMusicAPICompletionHandler)(NSData * data, NSURLResponse * 
  - Singer:   歌手
  - PlayList: 歌单
  - User:     用户
+ - Mv:       MV
+ - Lyric:    歌词
+ - Radio:    电台
  */
 typedef NS_ENUM(NSInteger, NMSearchType) {
     NMSearch(Music, 1),
@@ -30,6 +33,9 @@ typedef NS_ENUM(NSInteger, NMSearchType) {
     NMSearch(Singer, 100),
     NMSearch(PlayList, 1000),
     NMSearch(User, 1002),
+    NMSearch(Mv, 1004),
+    NMSearch(Lyric, 1006),
+    NMSearch(Radio, 1009),
 };
 
 /**
