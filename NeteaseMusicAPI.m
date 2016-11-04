@@ -91,6 +91,13 @@ NSString *urlEncode(NSString *input);
     [[session dataTaskWithRequest:request completionHandler:completionHandler] resume];
 }
 
++ (void)programInfoWithProgramId:(NSInteger)programId completionHandler:(NeteaseMusicAPICompletionHandler)completionHandler {
+    NSString *URLString = [NSString stringWithFormat:@"http://music.163.com/api/dj/program/detail?id=%ld", programId];
+    NSMutableURLRequest *request = [self requestWithURLString:URLString];
+    request.HTTPMethod = @"GET";
+    [[session dataTaskWithRequest:request completionHandler:completionHandler] resume];
+}
+
 
 /**
  初始化请求对象

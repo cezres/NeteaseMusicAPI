@@ -49,7 +49,8 @@
 //    [NeteaseMusicAPI playlistInfoWithPlaylistId:8486041 completionHandler:handler];
     // 歌词
 //    [NeteaseMusicAPI musicLyricWithMusicId:426881506 completionHandler:handler];
-    
+    // 电台节目信息
+//    [NeteaseMusicAPI programInfoWithProgramId:795437823 completionHandler:handler];
 }
 
 

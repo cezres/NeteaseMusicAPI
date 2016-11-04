@@ -102,6 +102,14 @@ typedef NS_ENUM(NSInteger, NMSearchType) {
  */
 + (void)musicLyricWithMusicId:(NSInteger)musicId completionHandler:(NeteaseMusicAPICompletionHandler)completionHandler;
 
+/**
+ 电台节目信息
+
+ @param programId         <#programId description#>
+ @param completionHandler <#completionHandler description#>
+ */
++ (void)programInfoWithProgramId:(NSInteger)programId completionHandler:(NeteaseMusicAPICompletionHandler)completionHandler;
+
 
 
 @end
